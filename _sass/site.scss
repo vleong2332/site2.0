@@ -1,0 +1,14 @@
+$primary-color: #00A99D;
+$secondary-color: #662D91;
+$tertiary-color: #FBB03B;
+
+$light-text: #FFF;
+$dark-text: #333;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto+Slab:400,700');
+
+// Import partials.
+@import
+  "site/base",
+  "site/hero"
+;

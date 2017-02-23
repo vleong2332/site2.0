@@ -1,0 +1,14 @@
+{
+  "title": "Vicky Leong",
+  "subtitle": "Front-end Developer",
+  "actionButtons": {
+    "primary": {
+      "text": "Read on",
+      "action": ""
+    },
+    "secondary": {
+      "text": "Resume",
+      "action": ""
+    }
+  }
+}

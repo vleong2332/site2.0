@@ -1,0 +1,24 @@
+.site-header {
+  background-color: $primary-color;
+  .wrapper {
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    max-width: calc(100% - (1rem * 2)); // 1rem for each side padding
+  }
+  .site-nav {
+    background-color: transparent;
+    border: none;
+  }
+  .logo {
+    width: 24px;
+    height: 24px;
+  }
+  .menu-icon svg path {
+    fill: #FFF;
+  }
+  .page-link {
+    color: $light-text;
+  }
+}
