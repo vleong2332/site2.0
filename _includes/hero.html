@@ -1,8 +1,47 @@
 <section class="hero">
   <div class="content-wrapper">
-    <h1 class="title">{{ site.data.hero.title }}</h1>
-    <h2 class="subtitle">{{ site.data.hero.subtitle }}</h2>
-    <button class="btn btn-primary">{{ site.data.hero.actionButtons.primary.text }}</button>
-    <button class="btn btn-secondary">{{ site.data.hero.actionButtons.secondary.text }}</button>
+    <h1 class="title">
+      {{ site.data.hero.title }}
+    </h1>
+    <h2 class="subtitle">
+      {{ site.data.hero.subtitle }}
+    </h2>
+    <a class="btn-primary" role="button">
+      {{ site.data.hero.actionButtons.primary.text }}
+    </a>
+    <a class="btn-hollow" role="button" href="">
+      {{ site.data.hero.actionButtons.secondary.text }}
+    </a>
   </div>
+
+  <!--
+  Bubbles
+
+  Must have one of data-bottom-right || data-bottom-left || data-top-right ||
+  data-top-left. Value is 2 integers || percentage separated by a space.
+
+  Must have data-inner-ring with color hex || name as value.
+
+  Must have data-outer-ring with color hex || name as value.
+
+  Can have data-center with color hex || name as value. Defaults to inherit.
+  -->
+  <div class="bubble"
+       data-bottom-right="0 0"
+       data-center="30px"
+       data-inner-ring="10px #333"
+       data-outer-ring="5px #AAA"
+  ></div>
+  <div class="bubble"
+       data-top-right="0 0"
+       data-center="20px"
+       data-inner-ring="5px #333"
+       data-outer-ring="10px #AAA"
+  ></div>
+  <div class="bubble"
+       data-bottom-right="40 40"
+       data-center="40px"
+       data-inner-ring="1px #333"
+       data-outer-ring="20px #AAA"
+  ></div>
 </section>
