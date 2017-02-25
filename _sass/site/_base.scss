@@ -19,24 +19,48 @@ h2 {
   padding-right: 1rem;
 }
 
-.btn {
+*[role="button"] {
   border: 1px solid transparent;
-  border-radius: 5px 0 5px 0;
-  padding: 0.3rem 0.7rem;
+  border-radius: 2px;
+  padding: 0.35rem 0.85rem;
   font-size: 1.25rem;
+  color: $light-text;
+  cursor: pointer;
   background: inherit;
-  transition: background-color 222ms ease;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.15);
+  transition: all 222ms ease;
+
+  &:hover {
+    text-decoration: none;
+    color: $light-text;
+    box-shadow: none;
+  }
 
   &.btn-primary {
-    background-color: $tertiary-color;
     border-color: $tertiary-color;
+    background-color: $tertiary-color;
+    color: $light-text;
   }
 
-  &.btn-secondary {
-    background-color: transparent;
-    color: #FFF;
-    border-color: #FFF;
+  &.btn-primary:hover{
+    border-color: $tertiary-color-dark;
+    background-color: $tertiary-color-dark;
+    color: $light-text;
+
   }
+
+  &.btn-hollow {
+    border-color: #FFF;
+    background-color: transparent;
+  }
+
+  &.btn-hollow:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+}
+
+a[role="button"]:visited {
+  color: $light-text;
 }
 
 
@@ -44,6 +68,35 @@ h2 {
 .site-header {
   border-top-width: 0px;
   border-bottom-width: 0px;
+}
+
+
+// Generic media queries
+@media screen and (min-width: $m-screen) {
+  h1 {
+    font-size: 3.25rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: $l-screen) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: $xl-screen) {
+  h1 {
+    font-size: 4.25rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
 }
 
 

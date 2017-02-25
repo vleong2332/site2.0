@@ -1,9 +1,21 @@
 $primary-color: #00A99D;
+$primary-color-dark: #00766A;
+
 $secondary-color: #662D91;
+$secondary-color-dark: #330A60;
+
+$tertiary-color-light: #FEE36E;
 $tertiary-color: #FBB03B;
+$tertiary-color-dark: #C88008;
 
 $light-text: #FFF;
 $dark-text: #333;
+
+$xl-screen: 1200px;
+$l-screen: 1024px;
+$m-screen: 768px;
+$s-screen: 480px;
+$xs-screen: 320px;
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto+Slab:400,700');
 
