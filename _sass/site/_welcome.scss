@@ -1,0 +1,26 @@
+.welcome {
+  min-height: 320px;
+  height: calc(100% - 56px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  .wrapper {
+    max-width: 100%;
+  }
+  @media screen and (min-width: $m-screen) {
+    .wrapper {
+      max-width: 80%;
+    }
+  }
+  @media screen and (min-width: $l-screen) {
+    .wrapper {
+      max-width: 60%;
+    }
+  }
+  @media screen and (min-width: $xl-screen) {
+    .wrapper {
+      max-width: 50%;
+    }
+  }
+}

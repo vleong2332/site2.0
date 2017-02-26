@@ -14,9 +14,14 @@ h2 {
   font-size: 2rem;
 }
 
-.content-wrapper {
+.wrapper {
   padding-left: 1rem;
   padding-right: 1rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 *[role="button"] {
@@ -102,3 +107,4 @@ a[role="button"]:visited {
 
 @import 'hero';
 @import 'header';
+@import 'welcome';

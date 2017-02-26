@@ -1,11 +1,15 @@
 .site-header {
   background-color: $primary-color;
+  .site-title {
+    font-size: initial;
+    font-weight: initial;
+  }
   .wrapper {
     margin: 0;
     padding-left: 1rem;
     padding-right: 1rem;
     width: 100%;
-    max-width: calc(100% - (1rem * 2)); // 1rem for each side padding
+    max-width: 100%;
   }
   .site-nav {
     background-color: transparent;
