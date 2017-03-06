@@ -17,6 +17,10 @@ $m-screen: 768px;
 $s-screen: 480px;
 $xs-screen: 320px;
 
+$nav-height: 56px;
+
+$max-z-index: 1000;
+
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto+Slab:400,700');
 
 // Import partials.

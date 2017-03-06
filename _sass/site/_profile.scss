@@ -1,0 +1,28 @@
+.profile {
+  // min-height: 320px;
+  // height: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // justify-content: center;
+  // border-bottom: 1px solid #E0E0E0;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  box-sizing: border-box;
+  .wrapper {
+    max-width: 100%;
+    // @media screen and (min-width: $m-screen) {
+    //   max-width: 75%;
+    // }
+    // @media screen and (min-width: $l-screen) {
+    //   max-width: 60%;
+    // }
+    // @media screen and (min-width: $xl-screen) {
+    //   max-width: 50%;
+    // }
+  }
+  .profile-block {
+    display: inline-block;
+    width: 33.33%;
+  }
+}

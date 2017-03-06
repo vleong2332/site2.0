@@ -1,26 +1,32 @@
 .welcome {
   min-height: 320px;
-  height: calc(100% - 56px);
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  // border-bottom: 1px solid #E0E0E0;
+  // padding-top: 7rem;
+  // padding-bottom: 7rem;
   .wrapper {
     max-width: 100%;
-  }
-  @media screen and (min-width: $m-screen) {
-    .wrapper {
-      max-width: 80%;
+    @media screen and (min-width: $m-screen) {
+      max-width: 75%;
     }
-  }
-  @media screen and (min-width: $l-screen) {
-    .wrapper {
+    @media screen and (min-width: $l-screen) {
       max-width: 60%;
     }
-  }
-  @media screen and (min-width: $xl-screen) {
-    .wrapper {
+    @media screen and (min-width: $xl-screen) {
       max-width: 50%;
     }
+  }
+}
+
+.welcome-pic {
+  padding-top: 3rem;
+  background-color: $primary-color;
+  img {
+    width: 33.33%;
+    margin-left: auto;
   }
 }
