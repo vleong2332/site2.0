@@ -14,6 +14,10 @@ h2 {
   font-size: 2rem;
 }
 
+body > section:first-of-type {
+  padding-top: $nav-height;
+}
+
 .wrapper {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -66,6 +70,10 @@ h2 {
 
 a[role="button"]:visited {
   color: $light-text;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 
