@@ -76,6 +76,16 @@ a[role="button"]:visited {
   overflow: hidden;
 }
 
+.flex-h {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+
 
 // Override theme style
 .site-header {
@@ -113,6 +123,7 @@ a[role="button"]:visited {
 }
 
 
+@import 'alt_home';
 @import 'hero';
 @import 'header';
 @import 'welcome';

@@ -14,8 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
 function disableScrollOnBody(checkbox) {
   var body = document.querySelector('body');
   checkbox.checked ?
     body.classList.add('no-scroll') : body.classList.remove('no-scroll');
+}
+
+
+function scrollToWelcome() {
+  var welcome = document.querySelector('.welcome');
+  welcome && welcome.scrollIntoView({ behavior: 'smooth' });
 }
