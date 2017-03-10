@@ -5,6 +5,11 @@
   flex-direction: column;
   background-color: $primary-color-dark;
 
+  .anchor {
+    position: relative;
+    top: -$nav-height;
+  }
+
   .image {
     flex: 1 1 50%;
     width: 100%;
@@ -38,7 +43,7 @@
     }
   }
 
-  @media all and (min-width: $s-screen) {
+  @media all and (min-width: 560px) {
     flex-direction: row;
     .image {
       justify-content: center;
