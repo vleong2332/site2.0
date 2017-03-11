@@ -1,14 +1,9 @@
 <div class="welcome">
   <a class="anchor"></a>
-  <div class="image">
-    <img src="{{ "assets/my_face.svg" | relative_url }}" />
-  </div>
-  <div class="text">
     <div class="wrapper">
       <h1>{{ site.data.welcome.title }}</h1>
       {% for message in site.data.welcome.messages %}
         <p>{{ message }}</p>
       {% endfor %}
     </div>
-  </div>
 </div>
