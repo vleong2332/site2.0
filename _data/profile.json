@@ -1,0 +1,19 @@
+{
+  "blocks": [
+    {
+      "title": "Back-End",
+      "icon": "assets/backend.svg",
+      "text": "Thrown into a deep-end of a django project on my first day of work, I've learned to thrive in and enjoy back-end development using server-side MVC framework."
+    },
+    {
+      "title": "Front-end",
+      "icon": "assets/frontend.svg",
+      "text": "This is my true passion, the reason I do web development. In addition to being confident with the front-end trifecta of HTML, CSS, and JavaScript, I've worked with Polymer and Angular 1 and dabbled with React."
+    },
+    {
+      "title": "UI/UX",
+      "icon": "assets/uiux.svg",
+      "text": "When needed, I wear the visual designer hat for the team, creating layouts and graphics. I'm currently learning UX fundamentals from Springboard to hone that aspect of my skills."
+    }
+  ]
+}

@@ -22,7 +22,7 @@ function disableScrollOnBody(checkbox) {
 }
 
 
-function scrollToWelcome() {
-  var welcome = document.querySelector('.welcome .anchor');
+function smoothScrollTo(section) {
+  var welcome = document.querySelector(section + ' .anchor');
   welcome && welcome.scrollIntoView({ behavior: 'smooth' });
 }

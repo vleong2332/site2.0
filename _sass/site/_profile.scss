@@ -1,28 +1,66 @@
 .profile {
-  // min-height: 320px;
-  // height: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-start;
-  // justify-content: center;
-  // border-bottom: 1px solid #E0E0E0;
   padding-top: 7rem;
   padding-bottom: 7rem;
   box-sizing: border-box;
+  position: relative;
+
+  .anchor {
+    position: absolute;
+    top: -$nav-height;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
   .wrapper {
     max-width: 100%;
-    // @media screen and (min-width: $m-screen) {
-    //   max-width: 75%;
-    // }
-    // @media screen and (min-width: $l-screen) {
-    //   max-width: 60%;
-    // }
-    // @media screen and (min-width: $xl-screen) {
-    //   max-width: 50%;
-    // }
   }
+
   .profile-block {
-    display: inline-block;
-    width: 33.33%;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .profile-block-icon {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 2rem auto;
+    }
+
+    h3, p {
+      color: #888;
+    }
+
+    &:hover {
+      .profile-block-icon {
+        filter: saturate(2);
+      }
+      h3, p {
+        color: #111;
+      }
+    }
+
+    @media all and (min-width: 600px) {
+      width: 33.33%;
+      display: inline-block;
+      float: left;
+      margin-bottom: 0;
+
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
   }
 }
