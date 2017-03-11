@@ -1,0 +1,80 @@
+{
+  "languages": [
+    {
+      "name": "HTML",
+      "level": "confident"
+    },
+    {
+      "name": "CSS",
+      "level": "confident"
+    },
+    {
+      "name": "JavaScript",
+      "level": "confident"
+    },
+    {
+      "name": "Python",
+      "level": "confident"
+    },
+    {
+      "name": "C#",
+      "level": "comfortable"
+    },
+    {
+      "name": "Java",
+      "level": "comfortable"
+    },
+    {
+      "name": "PHP",
+      "level": "dabbled"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "jQuery",
+      "level": "confident"
+    },
+    {
+      "name": "Polymer",
+      "level": "comfortable"
+    },
+    {
+      "name": "SASS",
+      "level": "comfortable"
+    },
+    {
+      "name": "Bootstrap",
+      "level": "comfortable"
+    },
+    {
+      "name": "Angular 1",
+      "level": "dabbled"
+    },
+    {
+      "name": "React",
+      "level": "dabbled"
+    },
+    {
+      "name": "Android",
+      "level": "dabbled"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Balsamiq",
+      "level": "confident"
+    },
+    {
+      "name": "Illustrator",
+      "level": "comfortable"
+    },
+    {
+      "name": "Photoshop",
+      "level": "comfortable"
+    },
+    {
+      "name": "Gulp",
+      "level": "comfortable"
+    }
+  ]
+}

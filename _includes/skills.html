@@ -1,0 +1,51 @@
+<div class="skills">
+  <a class="anchor"></a>
+  <div class="wrapper">
+
+    <h1>Skills</h1>
+
+    <h3>Legend</h3>
+    <div class="skill-group">
+      <div class="skill confident">
+        <p>Confident</p>
+      </div>
+      <div class="skill comfortable">
+        <p>Confident</p>
+      </div>
+      <div class="skill dabbled">
+        <p>Dabbled</p>
+      </div>
+    </div>
+
+    <h3>Languages</h3>
+    <div class="skill-group">
+      {% for language in site.data.skills.languages %}
+        <div class="skill {{ language.level }}">
+          <p>{{ language.name }}</p>
+          <!-- <p>{{ language.level }}</p> -->
+        </div>
+      {% endfor %}
+    </div>
+
+    <h3>Frameworks/Libraries</h3>
+    <div class="skill-group">
+      {% for framework in site.data.skills.frameworks %}
+        <div class="skill {{ framework.level }}">
+          <p>{{ framework.name }}</p>
+          <!-- <p>{{ framework.level }}</p> -->
+        </div>
+      {% endfor %}
+    </div>
+
+    <h3>Tools</h3>
+    <div class="skill-group">
+      {% for tool in site.data.skills.tools %}
+        <div class="skill {{ tool.level }}">
+          <p>{{ tool.name }}</p>
+          <!-- <p>{{ tool.level }}</p> -->
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
