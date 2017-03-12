@@ -31,6 +31,10 @@
   ],
   "frameworks": [
     {
+      "name": "Django",
+      "level": "confident"
+    },
+    {
       "name": "jQuery",
       "level": "confident"
     },
@@ -47,7 +51,7 @@
       "level": "comfortable"
     },
     {
-      "name": "Angular 1",
+      "name": "Angular(1)",
       "level": "dabbled"
     },
     {
@@ -75,6 +79,10 @@
     {
       "name": "Gulp",
       "level": "comfortable"
+    },
+    {
+      "name": "Webpack",
+      "level": "dabbled"
     }
   ]
 }
