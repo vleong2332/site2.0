@@ -1,8 +1,24 @@
 <div class="skills">
   <a class="anchor"></a>
-  <h1>Skills</h1>
-
   <div class="wrapper">
+
+    <div class="section-header">
+      <h1>Growing Skills</h1>
+      <div class="tooltip legend">
+        ?
+        <div class="tooltip-content skill-group">
+          <div class="skill conf">
+            <p>Confident</p>
+          </div>
+          <div class="skill comf">
+            <p>Comfortable</p>
+          </div>
+          <div class="skill dab">
+            <p>Dabbled</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- <h3>Legend</h3>
     <div class="skill-group">
@@ -17,41 +33,18 @@
       </div>
     </div> -->
 
-    <div class="category">
-      <h3 class="category-title">Languages</h3>
-      <div class="skill-group">
-        {% for language in site.data.skills.languages %}
-          <div class="skill {{ language.level }}">
-            <p>{{ language.name }}</p>
-            <!-- <p>{{ language.level }}</p> -->
-          </div>
-        {% endfor %}
+    {% for skill in site.data.skills.skills %}
+      <div class="category">
+        <h3 class="category-title">{{ skill.category }}</h3>
+        <div class="skill-group">
+          {% for item in skill.items %}
+            <div class="skill {{ item.level }}">
+              <p>{{ item.name }}</p>
+            </div>
+          {% endfor %}
+        </div>
       </div>
-    </div>
-
-    <div class="category">
-      <h3 class="category-title">Frameworks/Libraries</h3>
-      <div class="skill-group">
-        {% for framework in site.data.skills.frameworks %}
-          <div class="skill {{ framework.level }}">
-            <p>{{ framework.name }}</p>
-            <!-- <p>{{ framework.level }}</p> -->
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="category">
-      <h3 class="category-title">Tools</h3>
-      <div class="skill-group">
-        {% for tool in site.data.skills.tools %}
-          <div class="skill {{ tool.level }}">
-            <p>{{ tool.name }}</p>
-            <!-- <p>{{ tool.level }}</p> -->
-          </div>
-        {% endfor %}
-      </div>
-    </div>
+    {% endfor %}
 
   </div>
 </div>

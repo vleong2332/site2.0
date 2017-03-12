@@ -5,10 +5,56 @@
   color: #FFF;
   text-align: center;
 
+
   .wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .legend {
+    font-size: 120%;
+  }
+
+  .tooltip {
+    position: relative;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: $tertiary-color;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: background-color 222ms ease-in-out;
+
+    .tooltip-content {
+      position: absolute;
+      display: none;
+      background-color: $tertiary-color;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      border: 1px solid $tertiary-color;
+      margin: 0;
+      left: 50%;
+      top: 75%;
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      background-color: $tertiary-color;
+
+      .tooltip-content {
+        display: block;
+      }
+
+    }
   }
 
   .category {
@@ -60,16 +106,17 @@
     padding: 1rem;
     border-radius: 3px;
     box-sizing: border-box;
+    white-space: nowrap;
 
-    &.confident {
+    &.conf {
       background-color: rgba(0, 0, 0, 0.5);
     }
 
-    &.comfortable {
+    &.comf {
       background-color: rgba(0, 0, 0, 0.25);
     }
 
-    &.dabbled {
+    &.dab {
       background-color: rgba(0, 0, 0, 0.1);
     }
 
@@ -92,5 +139,5 @@
       max-width: 50%;
     }
   }
-  
+
 }
