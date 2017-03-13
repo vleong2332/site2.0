@@ -1,9 +1,14 @@
 .skills {
   background-color: $primary-color-dark;
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
   color: #FFF;
   text-align: center;
+  background-image: url('../assets/plant.svg');
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 100%;
+  background-size: 100px;
 
   .wrapper {
     display: flex;
@@ -130,6 +135,7 @@
   }
 
   @media all and (min-width: 600px) {
+    padding-bottom: 6rem;
     .wrapper {
       flex-direction: row;
     }
