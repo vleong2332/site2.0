@@ -15,34 +15,101 @@
     // border: 1px solid red;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    // background-size: 100% auto;
+    background-size: cover;
     background-position: center center;
     border: none;
-    transition: background-size 222ms ease-in-out;
+    // font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 0.85);
+    // font-size: 3rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 222ms ease;
+
+    h2 {
+      font-size: 3rem;
+      transition: font-size 222ms ease;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      // border: 1px solid rgba(255, 255, 255, 0.25);
+      // border-radius: 3px;
+      position: relative;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      clear: both;
+      position: absolute;
+      top: 0;
+      left: 66.66%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.25);
+      // transform: skewX(-15deg);
+      transition: left 222ms ease, transform 222ms ease;
+    }
 
     &:hover {
-      background-size: 115% auto;
+      color: #FFF;
+      h2 {
+        font-size: 3.5rem;
+      }
+      &::before {
+        // transform: skewX(-20deg);
+        left: 33.33%;
+      }
     }
+
+    // &:hover {
+    //   // background-size: 115% auto;
+    //   font-size: 3.5rem;
+    // }
   }
 
   .port {
-    background-image: url('../assets/port_bg.png');
+    // background-image: url('../assets/port_bg.png');
+    background-color: rgba(0, 32, 80, 0.75);
   }
 
   .td {
-    background-image: url('../assets/td_bg.png');
+    // background-image: url('../assets/td_bg.png');
+    background-color: rgba(0, 0, 0, 0.75);
   }
 
   .tr {
-    background-image: url('../assets/tr_bg.png');
+    // background-image: url('../assets/tr_bg.png');
+    background-color: rgba(194, 24, 91, 0.75);
+  }
+
+  .wa {
+    background-color: rgba(101, 98, 84, 0.75);
+  }
+
+  .ts {
+    background-color: rgba(0, 169, 157, 0.75);
+  }
+
+  .bt {
+    background-color: rgba(163, 75, 57, 0.75);
   }
 
   @media all and (min-width: 640px) {
     .project-wrapper {
-      background-size: auto 100%;
+      // background-size: auto 100%;
 
       &:hover {
-        background-size: auto 120%;
+        // background-size: auto 120%;
       }
 
     }
