@@ -1,3 +1,13 @@
 .site-footer {
-  
+  .site-map-list {
+    list-style: none;
+    margin-left: 0;
+  }
+  a {
+    color: $tertiary-color;
+    &:hover,
+    &:visited {
+      color: $tertiary-color-dark;
+    }
+  }
 }

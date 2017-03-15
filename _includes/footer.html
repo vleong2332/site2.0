@@ -6,6 +6,20 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+        <ul class="site-map-list">
+          {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <li>
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+          <li><a class="page-link" href="#">Resume</a></li>
+          <li><a class="page-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
         <ul class="contact-list">
           <li>
             {% if site.author %}
@@ -30,22 +44,6 @@
               {% include icon-twitter.html username=site.twitter_username %}
             </li>
             {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
         </ul>
       </div>
 
