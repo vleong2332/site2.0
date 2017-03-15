@@ -106,13 +106,23 @@
     }
   }
 
+  .page-list-item {
+    list-style: none;
+    display: inline;
+    margin-left: 1rem;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
   .page-link {
     color: $light-text;
     transition: color 250ms ease;
 
     &:hover {
       text-decoration: none;
-      color: $tertiary-color-light;
+      color: $tertiary-color;
     }
 
   }

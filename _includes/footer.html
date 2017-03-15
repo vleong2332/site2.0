@@ -7,15 +7,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="site-map-list">
-          {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <li>
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            </li>
-            {% endif %}
-          {% endfor %}
-          <li><a class="page-link" href="#">Resume</a></li>
-          <li><a class="page-link" href="#">Contact</a></li>
+          {% include page_list.html %}
         </ul>
       </div>
 
