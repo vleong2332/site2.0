@@ -72,6 +72,10 @@ a[role="button"]:visited {
   color: $light-text;
 }
 
+.hidden {
+  display: none;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -130,3 +134,4 @@ a[role="button"]:visited {
 @import 'profile';
 @import 'skills';
 @import 'work';
+@import 'experience';

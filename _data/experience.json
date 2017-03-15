@@ -1,0 +1,26 @@
+{
+  "title": "Endless Possibilities",
+  "jobs": [
+    {
+      "title": "Business Systems Developer",
+      "company": "Wycliffe Associates",
+      "location": "Orlando, FL",
+      "start": "Aug 2015",
+      "end": "present"
+    },
+    {
+      "title": "Front-end Developer",
+      "company": "Neutrino Graphics, LLC",
+      "location": "Remote",
+      "start": "Aug 2015",
+      "end": "Jun 2016"
+    },
+    {
+      "title": "Planetarium Programmer",
+      "company": "Pensacola Christian College",
+      "location": "Pensacola, FL",
+      "start": "Aug 2010",
+      "end": "Jul 2015"
+    }
+  ]
+}

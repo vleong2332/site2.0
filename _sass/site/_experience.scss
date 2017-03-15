@@ -1,0 +1,125 @@
+.experience {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .timeline {
+    box-sizing: border-box;
+    // border: 1px solid red;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    left: calc(-50% + 30px + 60px + 5rem);
+    transition: all 222ms ease-in-out;
+  }
+
+  .timeline-node {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 50%;
+    border: 5px solid #AAA;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    position: relative;
+    cursor: pointer;
+
+    &:not(:first-of-type)::after {
+      content: '';
+      display: block;
+      width: 5rem;
+      height: 5px;
+      background-color: #EEE;
+      position: absolute;
+      left: calc(100% + 5px);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.present {
+      background-color: $primary-color-dark;
+      border-color: $primary-color;
+
+      &::after {
+        // background-color: transparent;
+      }
+
+    }
+
+    &.future {
+      background-color: transparent;
+      border-color: #EEE;
+      color: #111;
+      font-weight: bold;
+    }
+  }
+
+  .detail {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 200px;
+    background-color: #EEE;
+    margin-top: 3rem;
+    position: relative;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media all and (min-width: $s-screen), (max-with: $m-screen) {
+      width: 75%;
+    }
+
+    @media all and (min-width: $m-screen) {
+      width: 50%;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      height: 0px;
+      width: 0px;
+      border-width: 2rem 1.5rem;
+      border-style: solid;
+      border-color: transparent transparent #EEE transparent;
+      position: absolute;
+      top: -4rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .present {
+      color: $primary-color;
+    }
+
+    .job-title,
+    .job-company,
+    .job-location,
+    .job-duration {
+      margin-bottom: 0;
+    }
+
+    .future {
+      .job-company {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+}
