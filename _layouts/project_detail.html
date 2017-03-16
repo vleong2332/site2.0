@@ -11,8 +11,8 @@ comments: true
   <div class="page-content">
     <div class="wrapper">
       {{ content }}
+      {% include disqus_comments.html %}
     </div>
   </div>
-  {% include disqus_comments.html %}
   {% include work.html %}
 </div>
