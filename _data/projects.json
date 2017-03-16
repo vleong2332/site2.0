@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Wycliffe<br />Associates",
+    "slug": "wycliffe-associates"
+  },
+  {
+    "name": "PORT",
+    "slug": "port"
+  },
+  {
+    "name": "translation<br />Database",
+    "slug": "translation-database"
+  },
+  {
+    "name": "translation<br />Recorder",
+    "slug": "translation-recorder"
+  },
+  {
+    "name": "translation<br />Studio",
+    "slug": "translation-studio"
+  },
+  {
+    "name": "bibletechs",
+    "slug": "bible-techs"
+  },
+  {
+    "name": "Thinkful Time Logger",
+    "slug": "thinkful-time-logger"
+  },
+  {
+    "name": "Flapby Bird",
+    "slug": "flapby-bird"
+  }
+]

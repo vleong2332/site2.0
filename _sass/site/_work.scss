@@ -1,11 +1,21 @@
 .work {
+
   .wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-list {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+  }
+
+  .project-detail {
+    padding: 1rem;
   }
 
   .project-wrapper {
@@ -25,9 +35,9 @@
     cursor: pointer;
     transition: color 222ms ease;
 
-    h2 {
+    a {
       font-size: 2rem;
-      transition: font-size 222ms ease;
+      color: #FFF;
       width: 100%;
       height: 100%;
       display: flex;
@@ -35,6 +45,11 @@
       justify-content: center;
       margin: 0;
       position: relative;
+    }
+
+    h2 {
+      font-size: 2rem;
+      transition: font-size 222ms ease;
     }
 
     &::before {
@@ -50,10 +65,11 @@
       transition: left 222ms ease, transform 222ms ease;
     }
 
-    &:hover {
+    &:hover a {
       color: #FFF;
+      text-decoration: none;
       h2 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
       }
       &::before {
         left: 33.33%;
@@ -63,37 +79,34 @@
   }
 
   .port {
-    // background-image: url('../assets/port_bg.png');
     background-color: rgba(0, 32, 80, 0.75);
   }
 
-  .td {
-    // background-image: url('../assets/td_bg.png');
+  .translation-database {
     background-color: rgba(0, 0, 0, 0.75);
   }
 
-  .tr {
-    // background-image: url('../assets/tr_bg.png');
+  .translation-recorder {
     background-color: rgba(194, 24, 91, 0.75);
   }
 
-  .wa {
+  .wycliffe-associates {
     background-color: rgba(101, 98, 84, 0.75);
   }
 
-  .ts {
+  .translation-studio {
     background-color: rgba(0, 169, 157, 0.75);
   }
 
-  .bt {
+  .bible-techs {
     background-color: rgba(163, 75, 57, 0.75);
   }
 
-  .tl {
+  .thinkful-time-logger {
     background-color: rgba(52, 118, 255, 0.75);
   }
 
-  .fb {
+  .flapby-bird {
     background-color: rgba(76, 61, 70, 0.75);
   }
 

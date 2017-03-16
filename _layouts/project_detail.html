@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<div class="project-detail {{ page.rootClass }}">
+  <div class="page-header">
+    <h1 class="project-title">{{ page.title | escape }}</h1>
+    <h3 class="project-tech-stack">{{ page.techStack | escape }}</h3>
+  </div>
+  <div class="page-content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </div>
+  {% include disqus_comments.html %}
+  {% include work.html %}
+</div>

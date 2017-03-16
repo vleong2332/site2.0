@@ -1,0 +1,83 @@
+.project-detail {
+
+  .wrapper {
+    max-width: 100%;
+    width: 700px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-header {
+    background-color: $primary-color;
+    color: $light-text;
+    text-align: center;
+  }
+  .page-title {
+    margin: 0;
+  }
+  .page-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .project-title,
+  .project-tech-stack {
+    margin-bottom: 0;
+  }
+  .image {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2rem auto;
+    box-shadow: 0px 0px 12px 0px #AAA;
+  }
+  .captioned-image {
+    .image {
+      margin-bottom: 0.5rem;
+    }
+    .caption {
+      font-style: italic;
+      text-align: center;
+      color: #666;
+    }
+  }
+  p {
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto 1rem auto;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  .action-links {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .action-btn {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  .work .wrapper {
+    width: 100%;
+    min-width: inherit;
+  }
+
+  .work .project-wrapper {
+    flex: 1 1 25%;
+    min-width: 300px;
+  }
+
+}

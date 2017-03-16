@@ -26,11 +26,14 @@ $max-z-index: 1000;
 // Import partials.
 @import
   "site/base",
-  "site/alt_home",
   "site/header",
   "site/hero",
   "site/profile",
   "site/skills",
   "site/experience",
-  "site/footer"
+  "site/footer",
+
+  "site/default",
+  "site/work",
+  "site/projects/base"
 ;
