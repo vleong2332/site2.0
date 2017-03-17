@@ -1,4 +1,10 @@
 .work {
+  position: relative;
+
+  .anchor {
+    position: absolute;
+    top: -$nav-height;
+  }
 
   .wrapper {
     margin: 0;
