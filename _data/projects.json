@@ -16,6 +16,10 @@
     "slug": "translation-recorder"
   },
   {
+    "name": "traslation<br/ >Recorder (web)",
+    "slug": "translation-recorder-web"
+  },
+  {
     "name": "translation<br />Studio",
     "slug": "translation-studio"
   },
