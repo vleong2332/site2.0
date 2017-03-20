@@ -1,0 +1,72 @@
+.contact {
+  .wrapper {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  a {
+    color: $tertiary-color;
+    &:hover {
+      color: $tertiary-color-dark;
+    }
+  }
+  .label,
+  input,
+  textarea {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  input:not([role="button"]),
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 0.3rem;
+    border: 1px solid #EEE;
+    border-radius: 3px;
+    color: $primary-color-dark;
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+  label {
+    margin-bottom: 1rem;
+  }
+  .label {
+    margin-bottom: 0.25rem;
+  }
+  .btn-primary {
+    width: auto;
+    align-self: center;
+  }
+  .contact-options {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: $secondary-color;
+    color: #FFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center right;
+    background-image: none;
+    @media all and (min-width: $s-screen) {
+      background-image: url('/assets/hand_phone.svg');
+    }
+  }
+  .social-media {
+    .icon {
+      margin-right: 0.5rem;
+    }
+    svg path {
+      fill: $tertiary-color;
+    }
+  }
+}

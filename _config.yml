@@ -24,6 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vickyleong.com"
 twitter_username: vleong2332
 github_username:  vleong2332
+linkedin_username: vickyleong
 disqus_shortname: vickyleong
 
 # Build settings
