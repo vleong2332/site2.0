@@ -53,12 +53,11 @@
     color: #FFF;
     border-radius: 5px;
     box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: center right;
-    background-image: none;
     @media all and (min-width: $s-screen) {
       background-image: url('/assets/hand_phone.svg');
+      background-repeat: no-repeat;
+      background-size: 65%;
+      background-position: center right;
     }
   }
   .social-media {
