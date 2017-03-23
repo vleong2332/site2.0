@@ -9,26 +9,36 @@ rootClass: translation-database
 <p class="notif notif-neutral">I completed this project as a full-time developer for the employer</p>
 
 <h3>The Context</h3>
-<p>The marketing dept. of Wycliffe Associates needed an easy way for users to access the list of banquets and events as another banquet season were coming near. By inserting a short, interactive section on the home page, user would be able to quickly find the closest banquet by selecting their state on the map provided.</p>
+<p>The Operations division of Wycliffe Associates needed to track the translation projects and workshops they were doing. They came to the IT department with a suggestion of building that project management into the existing translationDatabase, which was a language identification meta-database. Today, the project management aspect has been migrated to another platform. See <a href="{{ "projects/port/" | relative_url}}" />PORT</a> for more info.</p>
 
 <div class="captioned-image">
-  <img src="{{ "assets/wycliffeassociates_2.png" | relative_url }}" class="image" />
-  <p class="caption">The banquet module on the home page with Florida selected and Washington hovered.</p>
+  <img src="{{ "assets/td_home.png" | relative_url }}" class="image" />
+  <p class="caption">The home page of translationDatabase shows a language search bar and gateway language map.</p>
 </div>
 
 <div class="action-links">
-  <a class="action-btn btn-primary" role="button" href="https://wycliffeassociates.org" target="_blank" />View Website &rsaquo;</a>
-  <a class="action-btn btn-primary" role="button" disabled title="Code is not available publicly" />View Code &rsaquo;</a>
+  <a class="action-btn btn-primary" role="button" href="https://td.unfoldingword.org" target="_blank" />View Website &rsaquo;</a>
+  <a class="action-btn btn-primary" role="button" href="https://github.com/unfoldingword-dev/translationDatabaseWeb/" target="_blank" />View Code &rsaquo;</a>
 </div>
 
 <h3>The Stack</h3>
-<p>The website was implemented with FuelCMS, which uses CodeIgniter, a PHP framework. It was hosted on Azure. Various JavaScript libraries were used including jQuery.</p>
+<p>The website was built with Django, a Python MVC framework. jQuery was also used to enhance the front-end experience. The site is hosted by Eldarion, an excellent group of Django experts.</p>
+
+<div class="captioned-image">
+  <img src="{{ "assets/td_language_list.png" | relative_url }}" class="image" />
+  <p class="caption">The list of languages identified in translationDatabase. A quick search bar allows user to look for a specific language.</p>
+</div>
 
 <h3>My Role</h3>
-<p>As a new contributor, I joined a small team of one back-end developer and one designer. I was given the mockup and specs by the designer and I converted them into live code. I then, in turn, handed it over to the back-end developer who deployed and integrated it to the CMS.</p>
+<p>I was assigned as a full-time developer on this project, working alongside a few remote part-time developers. I handled the full-stack development, unit-testing, and deployment. At the time of this writing, I still maintain this project and offer consultation when needed.</p>
+
+<div class="captioned-image">
+  <img src="{{ "assets/td_language_detail.png" | relative_url }}" class="image" />
+  <p class="caption">"Afaraf" language detail page.</p>
+</div>
 
 <h3>The Process</h3>
-<p>Since the goal was to go in, make some changes, and get out, I decided to learn just enough of the current process, frameworks, and libraries to do what I needed to do.</p>
-<p>I created the banquet section as modular as possible using partial HTML that could be included in the homepage using PHP. The accompanying style and script were also tied to that partial HTML as much as possible.</p>
-<p>The US map was a collection of SVG acquired from a third party. Since the map was already being used elsewhere on the website, I decided to re-use the SVG and change the styling and the way it interacts with the user. A simple AJAX call is made whenever a user selects a state and populate the list on the right.</p>
-<p>I submitted the first iteration ten days before the agreed due date. The final iteration was submitted three days after that.</p>
+<p>I started out with designing the data model that will accomodate our users' need. That usually involved a lot of sketches on paper and on the whiteboard wall. Since I was new at working with data, I consulted with my colleagues after every iteration of the data model design to make sure it's robust. I also officially and un-officially met with the stakeholders (like, a lot) to make sure I was on the right track.</p>
+<p>After every satisfactory iteration of data modeling, I wrote out the controllers and other business logic that I knew I would need. In Django, this would be the urls, views, template tags, and signal receivers.</p>
+<p>The front-end presentation was done via Django's templating engine that uses HTML, CSS, and JavaScript. jQuery was already used in the project, so I also took advantage of that. The style and script was bundled with Webpack to condense HTTP request calls.</p>
+<p>Towards the end of every iteration, I wrote unit-tests and deployed the changes to the staging instance before promoting it to the production instance.</p>
