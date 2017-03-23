@@ -6,29 +6,28 @@ permalink: /projects/flapby-bird/
 rootClass: flapby-bird
 ---
 
-<p class="notif notif-neutral">I completed this project as a full-time developer for the employer</p>
+<p class="notif notif-neutral">I completed this project as a personal learning project</p>
 
 <h3>The Context</h3>
-<p>The marketing dept. of Wycliffe Associates needed an easy way for users to access the list of banquets and events as another banquet season were coming near. By inserting a short, interactive section on the home page, user would be able to quickly find the closest banquet by selecting their state on the map provided.</p>
+<p>In Thinkful's Intermediate JavaScript course, I had to create an imitation of the infamous flappy bird game with vanilla JavaScript.</p>
 
 <div class="captioned-image">
-  <img src="{{ "assets/wycliffeassociates_2.png" | relative_url }}" class="image" />
-  <p class="caption">The banquet module on the home page with Florida selected and Washington hovered.</p>
+  <img src="{{ "assets/flapby_bird.png" | relative_url }}" class="image" />
+  <p class="caption">The flapby bird!.</p>
 </div>
 
 <div class="action-links">
-  <a class="action-btn btn-primary" role="button" href="https://wycliffeassociates.org" target="_blank" />View Website &rsaquo;</a>
-  <a class="action-btn btn-primary" role="button" disabled title="Code is not available publicly" />View Code &rsaquo;</a>
+  <a class="action-btn btn-primary" role="button" href="http://vleong2332.github.io/flapby-bird/site/game/" target="_blank" />View app &rsaquo;</a>
+  <a class="action-btn btn-primary" role="button" href="https://github.com/vleong2332/flapby-bird/" />View code &rsaquo;</a>
 </div>
 
 <h3>The Stack</h3>
-<p>The website was implemented with FuelCMS, which uses CodeIgniter, a PHP framework. It was hosted on Azure. Various JavaScript libraries were used including jQuery.</p>
+<p>Strictly HTML5 canvas, CSS, and vanilla JS. It is hosted on Github pages. Browserify is used to bundle all the scripts.</p>
 
 <h3>My Role</h3>
-<p>As a new contributor, I joined a small team of one back-end developer and one designer. I was given the mockup and specs by the designer and I converted them into live code. I then, in turn, handed it over to the back-end developer who deployed and integrated it to the CMS.</p>
+<p>Since this is a personal project, I did everything including the graphics. You like?</p>
 
 <h3>The Process</h3>
-<p>Since the goal was to go in, make some changes, and get out, I decided to learn just enough of the current process, frameworks, and libraries to do what I needed to do.</p>
-<p>I created the banquet section as modular as possible using partial HTML that could be included in the homepage using PHP. The accompanying style and script were also tied to that partial HTML as much as possible.</p>
-<p>The US map was a collection of SVG acquired from a third party. Since the map was already being used elsewhere on the website, I decided to re-use the SVG and change the styling and the way it interacts with the user. A simple AJAX call is made whenever a user selects a state and populate the list on the right.</p>
-<p>I submitted the first iteration ten days before the agreed due date. The final iteration was submitted three days after that.</p>
+<p>I used Entity-Component-System pattern as the backbone. At first, I had to get the draw cycle to run at 60 fps for a smooth game. Once that was good, I focused on drawing the bird itself in the middle of the canvas for every draw cycle. A simple physics calculation is added to make the bird fall and an event listener to boost the bird's position whenever the user performs a mouse click.</p>
+<p>The obstacles were created at an interval and are moved to the left every draw cycle until they disappear and were destroyed. The gap's location is randomized, but it gets narrower after every "level".</p>
+<p>I created a background that can be repeated so that I can stack two of them horizontally and just cycle through them to give the impression of moving forward.</p>

@@ -1,34 +1,32 @@
 ---
 layout: project_detail
 title: Thinkful Time Logger
-techStack: Angular 1, HTML, CSS, JS
+techStack: Angular 1, Firebase, HTML, CSS, JS
 permalink: /projects/thinkful-time-logger/
 rootClass: thinkful-time-logger
 ---
 
-<p class="notif notif-neutral">I completed this project as a full-time developer for the employer</p>
+<p class="notif notif-neutral">I completed this project as a personal capstone project</p>
 
 <h3>The Context</h3>
-<p>The marketing dept. of Wycliffe Associates needed an easy way for users to access the list of banquets and events as another banquet season were coming near. By inserting a short, interactive section on the home page, user would be able to quickly find the closest banquet by selecting their state on the map provided.</p>
+<p>At the end of an Angular course with Thinkful, I needed a project that would showcase the skills I've acquired from the course. The idea is to use this app to track my Thinkful learning session.</p>
 
 <div class="captioned-image">
-  <img src="{{ "assets/wycliffeassociates_2.png" | relative_url }}" class="image" />
-  <p class="caption">The banquet module on the home page with Florida selected and Washington hovered.</p>
+  <img src="{{ "assets/ttl.png" | relative_url }}" class="image" />
+  <p class="caption">Thinkful Time Logger app is built with minimum visual distraction.</p>
 </div>
 
 <div class="action-links">
-  <a class="action-btn btn-primary" role="button" href="https://wycliffeassociates.org" target="_blank" />View Website &rsaquo;</a>
-  <a class="action-btn btn-primary" role="button" disabled title="Code is not available publicly" />View Code &rsaquo;</a>
+  <a class="action-btn btn-primary" role="button" href="http://vleong2332.github.io/thinkful-time-logger/app/" target="_blank" />View app &rsaquo;</a>
+  <a class="action-btn btn-primary" role="button" href="https://github.com/vleong2332/thinkful-time-logger/" />View code &rsaquo;</a>
 </div>
 
 <h3>The Stack</h3>
-<p>The website was implemented with FuelCMS, which uses CodeIgniter, a PHP framework. It was hosted on Azure. Various JavaScript libraries were used including jQuery.</p>
+<p>The app was built with HTML, CSS, and Angular 1. Github was used to host the static website and Firebase provided persistence.</p>
 
 <h3>My Role</h3>
-<p>As a new contributor, I joined a small team of one back-end developer and one designer. I was given the mockup and specs by the designer and I converted them into live code. I then, in turn, handed it over to the back-end developer who deployed and integrated it to the CMS.</p>
+<p>This is a personal project, so I did everything.</p>
 
 <h3>The Process</h3>
-<p>Since the goal was to go in, make some changes, and get out, I decided to learn just enough of the current process, frameworks, and libraries to do what I needed to do.</p>
-<p>I created the banquet section as modular as possible using partial HTML that could be included in the homepage using PHP. The accompanying style and script were also tied to that partial HTML as much as possible.</p>
-<p>The US map was a collection of SVG acquired from a third party. Since the map was already being used elsewhere on the website, I decided to re-use the SVG and change the styling and the way it interacts with the user. A simple AJAX call is made whenever a user selects a state and populate the list on the right.</p>
-<p>I submitted the first iteration ten days before the agreed due date. The final iteration was submitted three days after that.</p>
+<p>I wanted each component on the app (the timer, the text-editor, etc.) to be as modular as possible. They were built as child components that live inside the parent app component where data flows.</p>
+<p>To enable persistence, I must be able to associate data with a user. For this purpose, I associate someone's data with their google account (since everyone has a google account, right?).</p>
