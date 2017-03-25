@@ -1,0 +1,9 @@
+- title: About
+  url: /about/
+
+- title: Resume
+  url: /assets/files/resume_vicky_leong.pdf
+  target: _blank
+
+- title: Contact
+  url: /contact/
