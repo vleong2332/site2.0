@@ -7,12 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
 // Add drop shadow to the site-header when scroll position is not on top of
 // the page
 function toggleSiteHeaderDropShadow() {
-  var body = document.querySelector('body');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop ||
+    document.body.scrollTop || 0;
   var siteHeader = document.querySelector('.site-header');
 
-  if (body.scrollTop > 0 && !siteHeader.classList.contains('shadow')) {
+  if (scrollTop > 0 && !siteHeader.classList.contains('shadow')) {
     siteHeader.classList.add('shadow');
-  } else if (body.scrollTop <= 0 && siteHeader.classList.contains('shadow')) {
+  } else if (scrollTop <= 0 && siteHeader.classList.contains('shadow')) {
     siteHeader.classList.remove('shadow');
   }
 }
@@ -31,8 +32,10 @@ function scrollToJob(el, jobIndex) {
   var timeline = el.parentElement;
   var elWidth = el.getBoundingClientRect().width;
   if (!timeline || !elWidth) { return; }
+  console.log(el, window.getComputedStyle(el, '::after').getPropertyValue('width'));
   var marginWidth = parseFloat(window.getComputedStyle(el, '::after').getPropertyValue('width').replace('px', ''));
   var left = (timeline.clientWidth * -0.5) + (elWidth * 0.5) + (elWidth * jobIndex) + (marginWidth * jobIndex);
+  console.log(marginWidth, left);
   timeline.style.left = left.toString() + 'px';
   timeline.dataset.currentIndex = jobIndex.toString();
 

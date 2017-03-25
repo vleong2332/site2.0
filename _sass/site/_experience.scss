@@ -14,18 +14,28 @@
   .timeline {
     box-sizing: border-box;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow: visible;
     position: relative;
     left: calc(-50% + 30px + 60px + 5rem);
+    -webkit-transition: all 222ms ease-in-out;
     transition: all 222ms ease-in-out;
   }
 
   .timeline-node {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     box-sizing: border-box;
     width: 60px;
     height: 60px;
@@ -33,14 +43,20 @@
     border-radius: 50%;
     border: 5px solid #AAA;
     margin-left: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #FFF;
     position: relative;
     cursor: pointer;
 
-    &:not(:first-of-type)::after {
+    &::after {
       content: '';
       display: block;
       width: 5rem;
@@ -49,7 +65,12 @@
       position: absolute;
       left: calc(100% + 5px);
       top: 50%;
-      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+
+    &:first-of-type::after {
+      visibility: hidden;
     }
 
     &.present {
@@ -57,7 +78,7 @@
       border-color: $primary-color;
 
       &::after {
-        // background-color: transparent;
+        /* background-color: transparent;*/
       }
 
     }
@@ -81,9 +102,15 @@
     box-sizing: border-box;
     border-radius: 0.5rem;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     @media all and (min-width: $s-screen), (max-with: $m-screen) {
       width: 75%;
@@ -104,7 +131,8 @@
       position: absolute;
       top: -4rem;
       left: 50%;
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
     }
 
     .present {

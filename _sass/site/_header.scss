@@ -4,6 +4,7 @@
   width: 100%;
   height: $nav-height;
   z-index: $max-z-index;
+  -webkit-transition: box-shadow 333ms ease;
   transition: box-shadow 333ms ease;
 
   &.shadow {
@@ -36,11 +37,21 @@
         top: -100%;
         left: 0;
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding-bottom: 0;
+        -webkit-transition: top 150ms ease-in-out;
         transition: top 150ms ease-in-out;
       }
 
@@ -63,15 +74,25 @@
     z-index: $max-z-index;
 
     svg line:first-child {
-      transform-origin: center center;
-      transform: translateY(0) rotate(0deg);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+      -webkit-transition: -webkit-transform 150ms ease-in-out;
+      transition: -webkit-transform 150ms ease-in-out;
       transition: transform 150ms ease-in-out;
+      transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
     }
 
     svg line:last-child {
-      transform-origin: center center;
-      transform: translateY(0) rotate(0deg);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+      -webkit-transition: -webkit-transform 150ms ease-in-out;
+      transition: -webkit-transform 150ms ease-in-out;
       transition: transform 150ms ease-in-out;
+      transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
     }
 
   }
@@ -91,7 +112,8 @@
     &:checked ~ label .menu-icon svg {
 
       line:first-child {
-        transform: translateY(6px) rotate(45deg);
+        -webkit-transform: translateY(6px) rotate(45deg);
+                transform: translateY(6px) rotate(45deg);
       }
 
       line {
@@ -104,7 +126,8 @@
       }
 
       line:last-child {
-        transform: translateY(-6px) rotate(-45deg);
+        -webkit-transform: translateY(-6px) rotate(-45deg);
+                transform: translateY(-6px) rotate(-45deg);
       }
 
     }
@@ -122,6 +145,7 @@
 
   .page-link {
     color: $light-text;
+    -webkit-transition: color 250ms ease;
     transition: color 250ms ease;
 
     &:hover {
