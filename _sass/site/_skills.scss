@@ -144,21 +144,38 @@
         -ms-flex: 1 1 20%;
             flex: 1 1 20%;
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 3px;
     box-sizing: border-box;
     white-space: nowrap;
+    /* border-bottom-width: 7px;*/
+    /* border-bottom-style: solid;*/
 
     &.conf {
-      background-color: rgba(0, 0, 0, 0.5);
+      /* background-color: rgba(0, 0, 0, 0.5);*/
+      /* -o-border-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%) 1;*/
+      /*    border-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%) 1;*/
+      /*    border-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%) 1;*/
+      background-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%);
+      background-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%);
     }
 
     &.comf {
-      background-color: rgba(0, 0, 0, 0.25);
+      /* background-color: rgba(0, 0, 0, 0.25);*/
+      /* -o-border-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, transparent 66.1%) 1;*/
+      /*    border-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, transparent 66.1%) 1;*/
+      /*    border-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, transparent 66.1%) 1;*/
+      background-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, rgba(0, 0, 0, 0.15) 66.1%);
+      background-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, rgba(0, 0, 0, 0.15) 66.1%);
     }
 
     &.dab {
-      background-color: rgba(0, 0, 0, 0.1);
+      /* background-color: rgba(0, 0, 0, 0.1);*/
+      /* -o-border-image: linear-gradient(to right, $secondary-color-dark 33%, transparent 33.1%) 1;*/
+      /*    border-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, transparent 33.1%) 1;*/
+      /*    border-image: linear-gradient(to right, $secondary-color-dark 33%, transparent 33.1%) 1;*/
+      background-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, rgba(0, 0, 0, 0.15) 33.1%);
+      background-image: linear-gradient(to right, $secondary-color-dark 33%, rgba(0, 0, 0, 0.15) 33.1%);
     }
 
     h3 {

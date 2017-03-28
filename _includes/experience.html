@@ -1,16 +1,16 @@
 <section class="experience">
   <div class="wrapper">
     <h1 class="section-title">{{ site.data.experience.title }}</h1>
-    <div class="timeline" data-current-index="1">
-      <div class="timeline-node future" data-index="0" onclick="scrollToJob(this, 0)">?</div>
-      <div class="timeline-node present" data-index="1" onclick="scrollToJob(this, 1)">WA</div>
-      <div class="timeline-node" data-index="2" onclick="scrollToJob(this, 2)">NG</div>
-      <div class="timeline-node" data-index="3" onclick="scrollToJob(this, 3)">PC</div>
+    <div class="timeline" data-current-index="0">
+      <!-- <div class="timeline-node future" data-index="0" onclick="scrollToJob(this, 0)">?</div> -->
+      <div class="timeline-node present" data-index="0" onclick="scrollToJob(this, 0)">WA</div>
+      <div class="timeline-node" data-index="1" onclick="scrollToJob(this, 1)">NG</div>
+      <div class="timeline-node" data-index="2" onclick="scrollToJob(this, 2)">PC</div>
     </div>
     <div class="detail">
       {% for job in site.data.experience.jobs %}
-        <div data-index="{{ forloop.index }}"
-          {% if forloop.index == 1 %}
+        <div data-index="{{ forloop.index0 }}"
+          {% if forloop.index0 == 0 %}
           class="job present"
           {% else %}
           class="job hidden"
@@ -22,11 +22,11 @@
           <p class="job-location">{{ job.location }}</p>
         </div>
       {% endfor %}
-      <div data-index="0" class="job future hidden">
+      <!-- <div data-index="0" class="job future hidden">
         <h3 class="job-title">Front-end Developer</h3>
         <p class="job-company">Your team?</p>
         <a class="btn-primary" role="button" href="contact">Let's talk</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
