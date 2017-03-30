@@ -1,0 +1,31 @@
+<ul class="contact-list">
+  <li>
+  {% if site.author %}
+    {{ site.author | escape }}
+  {% else %}
+    {{ site.title | escape }}
+  {% endif %}
+  </li>
+  {% if site.email %}
+  <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+  {% endif %}
+  {% if site.phone %}
+  <li><a href="tel:{{ site.phone | remove: '(' | remove: ')' | remove: ' ' | remove: '-' }}">{{ site.phone | escape }}</a></li>
+  {% endif %}
+  <li><a href="{{ "assets/files/resume_vicky_leong.pdf" | relative_url }}" target="_blank">Résumé</a></li>
+  {% if site.github_username %}
+  <li class="social-media">
+    {% include icon-github.html username=site.github_username %}
+  </li>
+  {% endif %}
+  {% if site.twitter_username %}
+  <li class="social-media">
+    {% include icon-twitter.html username=site.twitter_username %}
+  </li>
+  {% endif %}
+  {% if site.linkedin_username %}
+  <li class="social-media">
+    {% include icon-linkedin.html username=site.linkedin_username %}
+  </li>
+  {% endif %}
+</ul>

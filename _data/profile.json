@@ -3,12 +3,12 @@
     {
       "title": "Back-End",
       "icon": "assets/images/backend.svg",
-      "text": "Thrown into a deep-end of a django project on my first day of work, I've learned to thrive in and enjoy back-end development using server-side MVC framework."
+      "text": "Thrown into a deep-end of a Django project on my first day of work, I've learned to thrive in and enjoy back-end development using a server-side MVC framework."
     },
     {
       "title": "Front-end",
       "icon": "assets/images/frontend.svg",
-      "text": "This is my true passion, the reason I do web development. In addition to being confident with the front-end trifecta of HTML, CSS, and JavaScript, I've worked with Polymer and Angular 1 and dabbled with React."
+      "text": "This is my true passion; the reason I do web development. In addition to being confident with the front-end trifecta of HTML, CSS, and JavaScript, I've worked with Polymer and Angular 1 and dabbled with React."
     },
     {
       "title": "UI/UX",

@@ -1,0 +1,24 @@
+main:
+  pic: assets/images/my_face.svg
+  text: Born and raised in <a href="https://en.wikipedia.org/wiki/Indonesia" target="_blank">Indonesia</a>, I came to the US for college and have stayed here since then. I am married to a southern belle and we have a precious toddler who likes to be mischievous. We are currently living in sunny Orlando helping Wycliffe Associates to involve people in the acceleration of Bible translation.
+
+interests:
+  - title: Table Tennis
+    pic: assets/images/ping_pong.svg
+    text: I enjoy a good match of table tennis. As things currently sit, I'm the undisputed champion of the office table tennis. Think you can beat me?
+
+  - title: Soccer
+    pic: assets/images/soccer_ball.svg
+    text: More of a fan than a player, I enjoy going out and play recreationally. I follow AC Milan sometimes. Forza Milan!
+
+  - title: Guitar
+    pic: assets/images/guitar.svg
+    text: I grew up with classical guitars. Didn't know about the acoustic guitar until I came to the states. I'm not an expert, but I enjoy strumming chords and sing along.
+
+  - title: Food
+    pic: assets/images/hot_bowl.svg
+    text: Chinese, Japanese, Korean, Vietnamese, Thai, Indonesian (of course), American, Italian, Southern, Mexican, and etc. Now, it would be cool if that's the list of languages I speak.
+
+  - title: Travel
+    pic: assets/images/plane.svg
+    text: I think it's impossible to like food but not like travel, and vice versa. When time (and money) allows, I always look to visit places where I've never been.

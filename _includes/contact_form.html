@@ -1,0 +1,24 @@
+<form action="https://formspree.io/vleong2332@gmail.com"
+      method="POST"
+      class="contact-form"
+>
+  <label for="name">
+    <span class="label">Full Name</span>
+    <input id="name" type="text" name="name" required placeholder="e.g. John Smith" />
+  </label>
+  <label for="email">
+    <span class="label">Email</span>
+    <input id="email" type="email" name="_replyto" required placeholder="e.g. my_name@email.com" />
+  </label>
+  <label for="tel">
+    <span class="label">Phone</span>
+    <input id="tel" type="tel" name="tel" placeholder="e.g. (111)222-3333" />
+  </label>
+  <label for="message">
+    <span class="label">Message</span>
+    <textarea id="message" name="message" rows="7"></textarea>
+  </label>
+  <input type="hidden" name="_subject" value="Contact from website!" />
+  <input type="text" name="_gotcha" style="display:none" />
+  <input id="submit" class="btn-primary" role="button" type="submit" value="Send" />
+</form>
