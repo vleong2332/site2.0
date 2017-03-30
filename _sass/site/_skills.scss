@@ -151,31 +151,51 @@
     /* border-bottom-width: 7px;*/
     /* border-bottom-style: solid;*/
 
+    &::after {
+      display: block;
+      width: 100%;
+      font-size: 3rem;
+      line-height: 0.5;
+      margin-top: -0.35rem;
+    }
+
     &.conf {
-      /* background-color: rgba(0, 0, 0, 0.5);*/
-      /* -o-border-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%) 1;*/
-      /*    border-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%) 1;*/
-      /*    border-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%) 1;*/
-      background-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%);
-      background-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, $secondary-color-light 66.1%);
+      background-color: rgba(0, 0, 0, 0.5);
+      &::after {
+        content: '\00B7 \00B7 \00B7';
+        color: rgba(255, 255, 255, 0.75);
+      }
+      /* -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, $secondary-color-light 66.1%) 1;*/
+      /*    border-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, $secondary-color-light 66.1%) 1;*/
+      /*    border-image: linear-gradient(to right, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, $secondary-color-light 66.1%) 1;*/
+      /* background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, $secondary-color-light 66.1%);*/
+      /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, $secondary-color-light 66.1%);*/
     }
 
     &.comf {
-      /* background-color: rgba(0, 0, 0, 0.25);*/
-      /* -o-border-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, transparent 66.1%) 1;*/
-      /*    border-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, transparent 66.1%) 1;*/
-      /*    border-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, transparent 66.1%) 1;*/
-      background-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, rgba(0, 0, 0, 0.15) 66.1%);
-      background-image: linear-gradient(to right, $secondary-color-dark 33%, $secondary-color 33.1%, $secondary-color 66%, rgba(0, 0, 0, 0.15) 66.1%);
+      background-color: rgba(0, 0, 0, 0.25);
+      &::after {
+        content: '\00B7 \00B7';
+        color: rgba(255, 255, 255, 0.5);
+      }
+      /* -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, transparent 66.1%) 1;*/
+      /*    border-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, transparent 66.1%) 1;*/
+      /*    border-image: linear-gradient(to right, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, transparent 66.1%) 1;*/
+      /* background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, rgba(0, 0, 0, 0.15) 66.1%);*/
+      /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.35) 33.1%, rgba(255, 255, 255, 0.35) 66%, rgba(0, 0, 0, 0.15) 66.1%);*/
     }
 
     &.dab {
-      /* background-color: rgba(0, 0, 0, 0.1);*/
-      /* -o-border-image: linear-gradient(to right, $secondary-color-dark 33%, transparent 33.1%) 1;*/
-      /*    border-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, transparent 33.1%) 1;*/
-      /*    border-image: linear-gradient(to right, $secondary-color-dark 33%, transparent 33.1%) 1;*/
-      background-image: -webkit-linear-gradient(left, $secondary-color-dark 33%, rgba(0, 0, 0, 0.15) 33.1%);
-      background-image: linear-gradient(to right, $secondary-color-dark 33%, rgba(0, 0, 0, 0.15) 33.1%);
+      background-color: rgba(0, 0, 0, 0.1);
+      &::after {
+        content: '\00B7';
+        color: rgba(255, 255, 255, 0.25);
+      }
+      /* -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0.15) 33%, transparent 33.1%) 1;*/
+      /*    border-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.15) 33%, transparent 33.1%) 1;*/
+      /*    border-image: linear-gradient(to right, rgba(255, 255, 255, 0.15) 33%, transparent 33.1%) 1;*/
+      /* background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.15) 33%, rgba(0, 0, 0, 0.15) 33.1%);*/
+      /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.15) 33%, rgba(0, 0, 0, 0.15) 33.1%);*/
     }
 
     h3 {
