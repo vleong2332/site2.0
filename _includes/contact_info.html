@@ -13,19 +13,24 @@
   <li><a href="tel:{{ site.phone | remove: '(' | remove: ')' | remove: ' ' | remove: '-' }}">{{ site.phone | escape }}</a></li>
   {% endif %}
   <li><a href="{{ "assets/files/resume_vicky_leong_2.pdf" | relative_url }}" target="_blank">Résumé</a></li>
+  {% if site.linkedin_username %}
+  <li class="social-media">
+    {% include icon-linkedin.html username=site.linkedin_username showUsername=true %}
+  </li>
+  {% endif %}
   {% if site.github_username %}
   <li class="social-media">
-    {% include icon-github.html username=site.github_username %}
+    {% include icon-github.html username=site.github_username showUsername=true %}
   </li>
   {% endif %}
   {% if site.twitter_username %}
   <li class="social-media">
-    {% include icon-twitter.html username=site.twitter_username %}
+    {% include icon-twitter.html username=site.twitter_username showUsername=true %}
   </li>
   {% endif %}
-  {% if site.linkedin_username %}
+  {% if site.dribbble_username %}
   <li class="social-media">
-    {% include icon-linkedin.html username=site.linkedin_username %}
+    {% include icon-dribbble.html username=site.dribbble_username showUsername=true %}
   </li>
   {% endif %}
 </ul>
