@@ -13,4 +13,26 @@
       {{ site.data.hero.actionButtons.secondary.text }}
     </a>
   </div>
+  <ul class="contact-list">
+    {% if site.linkedin_username %}
+    <li class="social-media">
+      {% include icon-linkedin.html username=site.linkedin_username showUsername=false %}
+    </li>
+    {% endif %}
+    {% if site.github_username %}
+    <li class="social-media">
+      {% include icon-github.html username=site.github_username showUsername=false %}
+    </li>
+    {% endif %}
+    {% if site.twitter_username %}
+    <li class="social-media">
+      {% include icon-twitter.html username=site.twitter_username showUsername=false %}
+    </li>
+    {% endif %}
+    {% if site.dribbble_username %}
+    <li class="social-media">
+      {% include icon-dribbble.html username=site.dribbble_username showUsername=false %}
+    </li>
+    {% endif %}
+  </ul>
 </section>
