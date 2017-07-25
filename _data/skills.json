@@ -7,22 +7,22 @@
         {"name": "HTML", "level": "conf"},
         {"name": "CSS", "level": "conf"},
         {"name": "JavaScript", "level": "conf"},
-        {"name": "Python", "level": "conf"},
-        {"name": "C#", "level": "comf"},
-        {"name": "Java", "level": "comf"},
+        {"name": "Python", "level": "comf"},
+        {"name": "C#", "level": "dab"},
+        {"name": "Java", "level": "dab"},
         {"name": "PHP", "level": "dab"}
       ]
     },
     {
       "category": "Frameworks/Libraries",
       "items": [
-        {"name": "Django", "level": "conf"},
         {"name": "jQuery", "level": "conf"},
+        {"name": "React", "level": "comf"},
+        {"name": "Django", "level": "comf"},
         {"name": "Polymer", "level": "comf"},
         {"name": "SASS", "level": "comf"},
         {"name": "Bootstrap", "level": "comf"},
         {"name": "Angular 1", "level": "dab"},
-        {"name": "React", "level": "dab"},
         {"name": "Android", "level": "dab"}
       ]
     },
