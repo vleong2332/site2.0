@@ -1,0 +1,46 @@
+---
+layout: project_detail
+title: Many-to-many control
+techStack: React, CSS
+permalink: /projects/m2m-ctl/
+rootClass: m2m-ctl
+---
+
+<p class="notif notif-neutral">I completed this project as a full-time developer for the employer</p>
+
+<h3>The Context</h3>
+<p>Many-to-many control in Dynamics365 form is good for looking up a specific related record, but cumbersome when trying to associate multiple records quickly. The process would include clicking an icon, typing the search term, clicking the search icon, and click one of the search result (that's just the happy path).</p>
+<p>To associate multiple records out of a handful, it's much easier to just look at a list and select/deselect the appropriate item.</p>
+
+<div class="captioned-image">
+  <img src="{{ "assets/images/m2m_ctl_expand_collapse.gif" | relative_url }}" class="image" />
+  <p class="caption">Items can be grouped by a specified field and each group can be collapsed and expanded.</p>
+</div>
+
+<div class="captioned-image">
+  <img src="{{ "assets/images/m2m_ctl_selection.gif" | relative_url }}" class="image" />
+  <p class="caption">Associating and disassociating records are so easy. Do it one-by-one or by groups.</p>
+</div>
+
+<div class="captioned-image">
+  <img src="{{ "assets/images/m2m_ctl_filter.gif" | relative_url }}" class="image" />
+  <p class="caption">Don't want to see all the items? You can filter by what are and are not already selected.</p>
+</div>
+
+<div class="action-links">
+  <a class="action-btn btn-primary" role="button" disabled />View website &rsaquo;</a>
+  <a class="action-btn btn-primary" role="button" href="https://github.com/WycliffeAssociates/m2m-ctl" target="_blank" title="It's Wordpress" />View code &rsaquo;</a>
+</div>
+
+
+<h3>The Stack</h3>
+<p>React app that's embeded into Dynamics365 Entity form as a web resource.</p>
+
+<h3>My Role</h3>
+<p>Designer and Front-end developer</p>
+
+<h3>The Process</h3>
+<p>The app is going to be embedded (i.e. displayed as an iframe), so the layout must be flexible enough to handle the various width that will be thrown at it. With flexbox, the app will be a single-item list on the smallest possible width and look more like a grid on a wider space.</p>
+<p>The React part is pretty straight-forward. Get info from the URL, make a couple network calls to get more info, then make other calls to get other info, and finally render the local state.</p>
+<p>An interesting bit that I encountered in this project was the multi-threaded nature of the server that process the associate/disassociate request. Since there's no API that receives batched requests, I had to make one request for each item when the user performs a "select/deselect all" action. This resulted in inconsistent outcome everytime the action is performed. After researching for a while, the best solution I could come up with is to tell the server to run the process one more time after all the requests have finished</p>
+<p>If you know a better solution, let's talk over lunch/coffee/tea/coke/water. My treat.</p>
