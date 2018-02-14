@@ -20,18 +20,20 @@ $outline: 2px;
         background:linear-gradient(10deg, rgba(40, 10, 10, 1), rgba(100, 10, 10, 1));
     }
     
-    .greetings-text {	
+    .greetings-text {
+        word-break: break-word;
         font-family: 'CoreCircus', sans-serif;
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 3.5rem;
         line-height: 1;
+        letter-spacing: -9px;
         margin: 0 auto;
         padding-top: 35vh;
         padding-bottom: 35vh;
-        padding-left: 1rem;
-        padding-right: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
         color: $red;
-        text-shadow: 
+        text-shadow:
             -1px -1px 0 $purple, 1px -1px 0 $purple, -1px 1px 0 $purple, 1px 1px 0 $purple,
             1px 0px 0px $green, 0px 1px 0px $green, 2px 1px 0px $green, 1px 2px 0px $green, 3px 2px 0px $green, 2px 3px 0px $green, 4px 3px 0px $green, 3px 4px 0px $green, 5px 4px 0px $green,
             3px 5px 0px $purple, 6px 5px 0px $purple,
@@ -59,6 +61,7 @@ $outline: 2px;
 
         &.hint {
             font-size: 2.5rem;
+            text-shadow: none;
         }
     }
 }
