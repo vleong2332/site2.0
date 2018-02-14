@@ -1,8 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', toggleSiteHeaderDropShadow);
   window.addEventListener('resize', scrollToCurrentJob);
+
+  if (document.querySelector('.valentines-2018')) {
+    var passwordInput = document.querySelector('input.password');
+    
+    passwordInput && passwordInput.addEventListener('keyup', checkPassword);
+  }
 });
 
+function checkPassword() {
+  if (this.value === 'pensacolapierfishhouse') {
+    var successTexts = document.querySelectorAll('.success-text');
+
+    successTexts.forEach(function(el) {
+      el.classList.remove('hidden');
+    });
+
+    this.removeEventListener('keyup', checkPassword);
+  }
+}
 
 // Add drop shadow to the site-header when scroll position is not on top of
 // the page
@@ -10,6 +27,10 @@ function toggleSiteHeaderDropShadow() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop ||
     document.body.scrollTop || 0;
   var siteHeader = document.querySelector('.site-header');
+  
+  if (!siteHeader) {
+    return;
+  }
 
   if (scrollTop > 0 && !siteHeader.classList.contains('shadow')) {
     siteHeader.classList.add('shadow');

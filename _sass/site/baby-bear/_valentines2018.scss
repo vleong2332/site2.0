@@ -1,0 +1,104 @@
+// $red: #f98ca4;
+$red: red;
+$blue: #4ad9db;
+// $green: #65f283;
+$green: pink;
+$orange: #f5b10b;
+$aquablue: #31a9b8;
+$yellowpepper: #f5be41;
+$tomato: #cf3721;
+$avocado: #258039;
+
+$darkblue: #2f3e9c;
+$darkred: #9e132c;
+$purple:#6e1f58;
+
+$outline: 2px;
+
+.valentines-2018 {
+    .greetings {
+        background:linear-gradient(10deg, rgba(40, 10, 10, 1), rgba(100, 10, 10, 1));
+    }
+    
+    .greetings-text {	
+        font-family: 'CoreCircus', sans-serif;
+        text-transform: uppercase;
+        font-size: 4rem;
+        line-height: 1;
+        margin: 0 auto;
+        padding-top: 35vh;
+        padding-bottom: 35vh;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        color: $red;
+        text-shadow: 
+            -1px -1px 0 $purple, 1px -1px 0 $purple, -1px 1px 0 $purple, 1px 1px 0 $purple,
+            1px 0px 0px $green, 0px 1px 0px $green, 2px 1px 0px $green, 1px 2px 0px $green, 3px 2px 0px $green, 2px 3px 0px $green, 4px 3px 0px $green, 3px 4px 0px $green, 5px 4px 0px $green,
+            3px 5px 0px $purple, 6px 5px 0px $purple,
+            -1px 2px 0 black, 0 3px 0 $purple, 1px 4px 0 $purple, 2px 5px 0px $purple,
+            2px -1px 0 $purple, 3px 0 0 $purple, 4px 1px 0 $purple, 5px 2px 0px $purple, 6px 3px 0 $purple, 7px 4px 0 $purple,
+            // 10px 10px 4px #dac249;
+            10px 10px 20px $red;
+        
+        input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid red;
+            width: 100%;
+            color: pink;
+            font-size: 1.8rem;
+            font-family: inherit;
+            padding: 0.25rem;
+            margin-top: 1rem;
+            margin-bottom: 10rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &.hint {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+/*
+ * Webfont: CoreCircus by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*
+ * Webfont: CoreCircus2DDot1 by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*/
+
+@font-face {
+	font-family: 'CoreCircus2DDot1';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CoreCircus';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+}
+
+	
+@font-face {
+    font-family: 'CoreCircusPierrot4';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot?#iefix') format('embedded-opentype'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff2') format('woff2'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff') format('woff'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.ttf') format('truetype');
+}
